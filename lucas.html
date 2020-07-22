@@ -2,13 +2,44 @@
   <head>
     <title>COVID-19 TESTE</title>
     <h1>Teste</h1>
+    
+      <link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>  
+   
+  <script src="mapa/WebPage/leaflet.js"></script>
+
+  <script src="mapa/WebPage/leaflet-heat.js"></script>
+
+  <style>
+    #map{width: 620px; height: 400px;}
+
+    </style>   
   </head>
+  
   <body>
     <p><h1>Secretaria de Saude</h1></p>
   <p>Casos de corona virus em montes claros</p>
   <p>Acesse este link para mais informações:<a href="https://saude.montesclaros.mg.gov.br/">Corona em MOC</a></p>
+  <br>
   <p>Segue abaixo a relacao dos casos de Covid-19 em Montes Claros distribuidos em cada bairro no dia 13/07/2020:</p>
-    <img  src="covid em moc.webp" width="400" height="400">
+  
+  <img src="covid em moc.webp" width="400" height="400">
+  <h1> Mapa de Montes Claros </h1>
+    
+    
+   
+     <div id="map"></div>
+  
+    <script>      
+     
+      var mymap = L.map('map').setView([-16.7248615, -43.8405874], 12.75);
+    
+    var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(mymap);
+    
+  </script>
+  
+  
   </body>
 </html>
       
