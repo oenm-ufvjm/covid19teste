@@ -2,20 +2,21 @@
 <head>
   <title>Mapa de Janaúba dos Casos de COVID-19</title>
 
-<link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>
- 
- <script src="mapa/WebPage/leaflet.js"></script>
+
+  <link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>  
+   
+  <script src="mapa/WebPage/leaflet.js"></script>
 
   <script src="mapa/WebPage/leaflet-heat.js"></script>
- 
- <style>
+
+  <style>
     #map{width: 620px; height: 400px;}
     #mapa2{width: 620px; height: 400px;}
-    </style>
- 
- 
- </head>
+    </style> 
+  
+</head>
 
+	
 <body>
 
        <h1>Mapa de Janaúba</h1>
@@ -35,7 +36,7 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         
         
         var heat = L.heatLayer([
-	[-15.789107, -43.3184059, 164], // Rio Novo, 164 casos
+	 [-15.789107, -43.3184059, 164], // Rio Novo, 164 casos
         [-15.8035743, -43.3075495, 121], // Centro , 121 casos
 	[-15.8070886, -43.3192736, 96], // Cerâmica , 96 casos
 	[-15.7936771, -43.3098555, 96], // Gameleira , 96 casos
@@ -53,6 +54,7 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	[-15.8400936, -43.3011615, 34], // Algodoes , 34 casos
 	[-15.7967043, -43.3064587, 33], // Nova Esperança , 33 casos
 	[-15.7791167, -43.3247024, 30], // Barbosa , 30 casos
+	
 		
 	],{
         max : 1.0,
