@@ -55,14 +55,14 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	[-15.7791167, -43.3247024, 30] // Barbosa , 30 casos
         
         
-        ],{
+       var heat = L.heatLayer(addressPoints,{
         max : 1.0,
         radius : 40, // default value
         blur : 25, // default value
         gradient : {0.2:'blue',0.5: 'lime', 0.8: 'yellow', 1.0: 'red'} // Values can be set for a scale of 0-1
-    } ).addTo(mymap);
+    }).addTo(mymap);
 
-        </script>
+       </script>
        
 </body>
 </html>
