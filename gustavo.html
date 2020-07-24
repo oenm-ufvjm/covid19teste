@@ -1,8 +1,27 @@
 <html>
-<head><h1>Gustavo Garcia</h1>
-<title>Gustavo testando site Observatório</title>
+<head>
+
+<h1>Gustavo Garcia</h1>
+
+
+ <link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>  
+   
+  <script src="mapa/WebPage/leaflet.js"></script>
+
+  <script src="mapa/WebPage/leaflet-heat.js"></script>
+
+  <style>
+    #map{width: 620px; height: 400px;}
+    #mapa2{width: 620px; height: 400px;}
+    </style> 
+  
+
 </head>
-<body> Teste para aprender a atualizar o site Observatório Covid-19
+
+  <body>
+
+    
+    <p>Teste para aprender a atualizar o site Observatório Covid-19</p>
 
   <p>Link abaixo relacionado ao tutorial de HTML</p>
   
@@ -16,6 +35,21 @@
   
   <img src="9bc8f0ad-a667-4b67-9c68-deac41866422.jpg" width="400" height="400">
 
+  <div id="map"></div>
+      
+      <p> Mapa de Janaúba. Atualizado em 21/06/2020 com dados da Secretaria Municipal de Saúde.  </p>
+      
+      
+       <script>      
+     
+      var mymap = L.map('map').setView([-15.8075, -43.3077], 13);
+
+var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(mymap);
+
+
+       </script>
 
 
 
