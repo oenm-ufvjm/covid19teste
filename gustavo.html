@@ -1,113 +1,65 @@
 <html>
-<<<<<<< HEAD
 <head>
+  <title>Mapa de Jaíba dos Casos de COVID-19</title>
 
-<h1>Gustavo Garcia</h1>
-
-
- <link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>  
-=======
-<head><h1>Gustavo Garcia</h1>
-<title>Gustavo testando site Observatório</title>
-   
-  
-   
-    <link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>  
->>>>>>> 3171f6c71ae0106cccfbefdcf6115b790a3beb60
-   
-  <script src="mapa/WebPage/leaflet.js"></script>
+<link rel="stylesheet" href="mapa/WebPage/leaflet.css"/>
+ 
+ <script src="mapa/WebPage/leaflet.js"></script>
 
   <script src="mapa/WebPage/leaflet-heat.js"></script>
-
-  <style>
+ 
+ <style>
     #map{width: 620px; height: 400px;}
     #mapa2{width: 620px; height: 400px;}
-<<<<<<< HEAD
-    </style> 
-  
-
-</head>
-
-  <body>
-
-    
-    <p>Teste para aprender a atualizar o site Observatório Covid-19</p>
-=======
-
-    </style> 
-    
-</head>
-
-     
-   <body> Teste para aprender a atualizar o site Observatório Covid-19
->>>>>>> 3171f6c71ae0106cccfbefdcf6115b790a3beb60
-
-  <p>Link abaixo relacionado ao tutorial de HTML</p>
-  
-  <p>Para mais informações acesse o link a baixo.</p>
+    </style>
  
-  <a href="https://www.w3schools.com">This is a link</a>
+ 
+ </head>
 
-  <br>
-  
-  <p>Dados atualizados sobre situação de Covid-19 no estado de Minas</p>
-  
-  <img src="9bc8f0ad-a667-4b67-9c68-deac41866422.jpg" width="400" height="400">
-    
-   
-    <h1>Mapa de Bocaiuva</h1>
+<body>
 
-
-  <div id="map"></div>
+       <h1>Mapa de Jaíba</h1>
+ 
+ <div id="map"></div>
       
-      <p> Mapa de Bocaiuva. Atualizado em 20/07/2020 com dados da Secretaria Municipal de Saúde.  </p>
+      <p> Mapa de calor de Jaíba atualizado dia 24/07/2020</p>
       
       
        <script>      
      
-      var mymap = L.map('map').setView([-17.1178601, -43.8335374], 13);
-    
-    var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(mymap);
-    
-  </script>
-      
-      
-      <h1>Mapa de Belo Horizonte</h1>
-      
-      
-      <div id="mapa2"></div>
-      
-      <p>Mapa de Belo Horizonte</p>
-      
-      
-       <script>      
-     
-      var mymap = L.map('mapa2').setView([-19.9118162, -43.9606184], 12);
+      var mymap = L.map('map').setView([-15.2359567, -43.6628444], 12);
 
 var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(mymap);
+        
+        
+        var heat = L.heatLayer([
+	[-15.3441251, -43.6963728, 3], // Cidade nova, 3 casos
+         [-15.3467296, -43.6741012, 10] // Centro , 10 casos
 
-  <div id="map"></div>
-      
-      <p> Mapa de Janaúba. Atualizado em 21/06/2020 com dados da Secretaria Municipal de Saúde.  </p>
-      
-      
-       <script>      
-     
-      var mymap = L.map('map').setView([-15.8075, -43.3077], 13);
+        
+        
+        ],{
+        max : 1.0,
+        radius : 40, // default value
+        blur : 25, // default value
+        gradient : {0.2:'blue',0.5: 'lime', 0.8: 'yellow', 1.0: 'red'} // Values can be set for a scale of 0-1
+    } ).addTo(mymap);
 
-var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(mymap);
-
-
-       </script>
-
-       </script>
-
-
+        </script>
+       
 </body>
 </html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
