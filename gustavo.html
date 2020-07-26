@@ -72,7 +72,92 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     } ).addTo(mymap);
 
         </script>	
-        
+	
+	<h1>Mapa de Teófilo Otoni</h1>
+
+
+  <div id="mapa2"></div>
+      
+      <p> Mapa de Teófilo Otoni </p>
+      
+   
+       <script>      
+     
+      var mymap = L.map('mapa2').setView([-17.8631729, -41.5067909], 14);
+
+var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(mymap);
+	       
+	
+ var heat = L.heatLayer([
+	
+              [-17.8631243, -41.5034094, 8], // Altino Barbosa, 8 casos
+              [-17.846708, -41.5092017, 80], // Bela Vista, 80 casos
+              [-17.87272, -41.4946183, 10], // Belvedere, 10 casos
+              [-17.865406, -41.4847448, 37], // Castro Pires, 37 casos
+              [-17.8641755, -41.5083563, 97], // Centro, 97 casos
+              [-17.8635213, -41.5120265, 12], // Cidade Alta, 12 casos
+              [-17.8746088, -41.5108373, 5], // Cidade Nova, 5 casos
+              [-17.8582872, -41.5170311, 44], // Concórdia, 44 casos
+              [-17.5985642, -41.4903392, 5], // Distrito de Mucuri, 5 casos
+              [-17.645306, -41.3840423, 6], // Distrito de Topázio , 6 casos
+              [-17.8553607, -41.5109694, 15], // Fátima, 15 casos
+              [-17.5564851, -41.1255536, 1], // Fazenda Mucuri , 1 caso
+              [-17.8366677, -41.508388, 3], // Felicidade, 3 casos
+              [-17.8820588, -41.5093971, 7], // Filadélfia, 7 casos
+              [-17.861947, -41.5247437, 19], // Frei Dimas, 19 casos
+	      [-17.8796306, -41.5011688, 17], // Funcionários , 17 casos
+              [-17.8552411, -41.5081218, 08], // Grão Pará , 08 casos
+              [-17.8523587, -41.5196287, 05], // Indaiá , 05 casos
+              [-17.8643468, -41.5025769, 55], // Ipiranga , 55 casos
+              [-17.86996, -41.5255374, 16], // Jardim das Acácias , 16 casos
+              [-17.8596706, -41.4864974, 04], // Jardim Floresta , 04 casos
+              [-17.8547434, -41.5019482, 30], // Jardim Iracema , 30 casos
+              [-17.8897093, -41.5031409, 30], // Jardim São Paulo , 30 casos
+              [-17.8482494, -41.5232876, 29], // Joaquin Pedrosa , 29 casos
+              [-17.8778672, -41.5144917, 19], // Laerte Laender , 19 casos
+              [-17.9593458, -41.5376047, 05], // Lajinha , 05 casos
+              [-17.8817736, -41.506142, 04], // Laranjeiras , 04 casos
+              [-17.8735247, -41.5056494, 75], // Manoel Pimenta , 75 casos
+              [-17.8715963, -41.5124206, 48], // Marajoara , 48 casos
+              [-17.8439195, -41.4982593, 71], // Matinha , 71 casos
+              [-17.8468445, -41.4777177, 03], // Monte Carlo , 03 casos
+              [-17.8762907, -41.4997759, 21], // Mucuri , 21 casos
+              [-17.8496071, -41.5048227, 05], // Novo Horizonte , 05 casos
+              [-17.8777074, -41.5249664, 03], // Olga Correa Prates , 03 casos
+              [-17.8629989, -41.5321999, 25], // Palmeiras , 25 casos
+              [-17.8561138, -41.4872127, 08], // Pampulhinha , 08 casos
+              [-17.900048, -41.499529, 07], // São Benedito , 07 casos
+              [-17.8362614, -41.526052, 60], // São Cristovão , 60 casos
+              [-17.866711, -41.5176479, 17], // São Diogo , 17 casos
+              [-17.8594312, -41.5064094, 08], // São Francisco , 08 casos
+              [-17.8538244, -41.4970012, 33], // São Jacinto , 33 casos
+              [-17.8455953, -41.4836157, 16], // Serra Verde , 16 casos
+              [-17.886302, -41.5120553, 14], // Solidariedade , 14 casos
+              [-17.8592097, -41.5017291, 15], // Tabajaras , 15 casos
+              [-17.9060233, -41.4916636, 12], // Taquara , 12 casos
+              [-17.8772238, -41.5082811, 22], // Teófilo Rocha , 22 casos
+              [-17.9062869, -41.4928807, 02], // Turma 37 , 02 casos
+              [-17.8952916, -41.5082244, 20], // Vila Barreiros , 20 casos
+              [-17.8359207, -41.512351, 15], // Vila Betel , 15 casos
+              [-17.8818351, -41.5054758, 10], // Vila Esperança , 10 casos
+              [-17.873763, -41.4820141, 10], // Vila Santa Clara , 10 casos
+              [-17.873437, -41.4950306, 18], // Vila São João , 18 casos
+              [-17.8411257, -41.5263117, 10], // Viriato , 10 casos
+
+
+ ],{
+	 
+	 max : 1.0,
+        radius : 40, // default value
+        blur : 25, // default value
+        gradient : {0.2:'blue',0.5: 'lime', 0.8: 'yellow', 1.0: 'red'} // Values can be set for a scale of 0-1
+    } ).addTo(mymap);
+
+        </script>
+		     
+
                
 </body>
 </html>
