@@ -176,115 +176,115 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(mymap3);
 	       
 	
- var heat = L.heatLayer([
-	 
-	      [-16.7239459, -43.8174572, 12], // Acácias, 12 casos
-              [-16.705497, -43.8442079, 4], // Alcides Rabelo, 4 casos
-              [-16.7022935, -43.854137, 8], // Alice Maia, 8 casos
-              [-16.7665189, -43.8514503, 11], // Alterosas, 11 casos
-              [-16.750408, -43.8401285, 11], // Alto da Boa Vista, 11 casos
-              [-16.6928142, -43.8500339, 1], // Alto Floresta, 1 casos
-              [-16.715107, -43.8548799, 17], // Alto São João, 17 casos
-              [-16.6981673, -43.8621516, 7], // Amazonas, 7 casos
-              [-16.7514792, -43.851431, 8], // Antonio Pimenta, 8 casos
-              [-16.7184117, -43.8056036, 12], // Augusta Mota, 12 casos
-              [-16.7121949, -43.8762826, 6], // Barcelona Park, 6 casos
-              [-16.7026821, -43.8767837, 2], // Bela Vista, 2 casos
-              [-16.697268, -43.8734884, 1], // Bela Paisagem, 1 casos
-              [-16.7295868, -43.8341256, 15], // Belvedere, 15 casos
-              [-16.7352223, -43.8783252, 11], // Candida Camara, 11 casos
-              [-16.7510679, -43.8723769, 11], // Canelas, 11 casos
-              [-16.7449677, -43.8666246, 5], // Canelas II, 5 casos
-              [-16.735269, -43.828513, 1], // Camilo Prates, 1 casos
-              [-16.7239557, -43.8300081, 19], // Carmelo, 19 casos
-              [-16.724568, -43.8674041, 31], // Centro, 31 casos
-              [-16.759773, -43.8765853, 1], // Chiquinho Guimaraes, 1 casos
-              [-16.668202, -43.8534452, 5], // Cidade Industrial, 5 casos
-              [-16.739058, -43.8684655, 4], // Cidade Nova, 5 casos
-              [-16.7302789, -43.8738369, 5], // Cidade Santa Maria, 5 casos
-              [-16.7320331, -43.8520499, 13], // Cintra, 13 casos
-              [-16.7544615, -43.8714182, 5], // Ciro dos anjos, 5 casos
-              [-16.7530521, -43.868753, 6], // Conj Joaquim Costa, 6 casos
-              [-16.739018, -43.8355906, 21], // Delfino Magalhaes, 21 casos
-              [-16.6850181, -43.8643642, 1], // Distrito Industrial, 1 casos
-              [-16.7065527, -43.8653421, 26], // Edgar Pereira, 26 casos
-              [-16.6868175, -43.8802598, 21], // Eldorado, 21 casos
-              [-16.7125301, -43.8385308, 13], // Esplanada, 13 casos
-              [-16.6927752, -43.8504629, 5], // Floresta, 5 casos
-              [-16.7424662, -43.8770143, 6], // Funcionarios, 6 casos
-              [-16.7087973, -43.8329448, 3], // Guarujá, 3 casos
-              [-16.7370525, -43.8995113, 34], // Ibituruna, 34 casos
-              [-16.7173196, -43.8155766, 30], // Independencia, 30 casos
-              [-16.7151331, -43.8306167, 4], // Interlagos, 4 casos
-              [-16.6849902, -43.8205335, 1], // Jaragua, 1 casos
-              [-16.7214243, -43.8141242, 3], // Jardim Alegre, 3 casos
-              [-16.7423535, -43.8502309, 2], // Jardim Alvorada, 2 casos
-              [-16.6973494, -43.8682499, 4], // Jardim Brasil, 4 casos
-              [-16.7540206, -43.8925754, 3], // Jardim Liberdade, 3 casos
-              [-16.7467595, -43.829147, 5], // Jardim Olimpico, 5 casos
-              [-16.7359541, -43.8448995, 20], // Jardim Palmeiras, 20 casos
-              [-16.7141245, -43.8807406, 3], // Jardim Panorama, 3 casos
-              [-16.717906, -43.834082, 16], // Jardim Primavera, 16 casos
-              [-16.7559178, -43.8765596, 6], // Jardim São Geraldo, 6 casos
-              [-16.7283761, -43.8808426, 6], // Jardim São Luiz, 6 casos
-              [-16.6946151, -43.844848, 3], // Jk, 3 casos
-              [-16.755399, -43.8447961, 4], // José Carlos de Lima, 4 casos
-              [-16.7256003, -43.8516507, 7], // Lourdes, 7 casos
-              [-16.7488882, -43.8808025, 56], // Major Prates, 56 casos
-              [-16.7606783, -43.865023, 35], // Maracanã, 35 casos
-              [-16.7534121, -43.8523353, 1], // Maria Candida, 1 casos
-              [-16.7235683, -43.8776138, 10], // Melo, 10 casos
-              [-16.7278922, -43.8491105, 2], // Monte Alegre, 2 casos
-              [-16.7211594, -43.8398456, 17], // Monte Carmelo, 17 casos
-              [-16.7601369, -43.8906444, 5], // Morada da Serra, 5 casos
-              [-16.7568273, -43.8850862, 5], // Morada do Parque, 5 casos
-              [-16.7448835, -43.8782833, 16], // Morada do Sol, 16 casos
-              [-16.7361685, -43.862541, 14], // Morrinhos, 14 casos
-              [-16.7383835, -43.8501003, 11], // Nossa Senhora de Fátima, 11 casos
-              [-16.7043941, -43.8689571, 6], // Nossa Senhora Aparecida, 6 casos
-	      [-16.6724164, -43.8226778, 01], // Nova América , 01 caso
-              [-16.5818688, -43.9422432, 13], // Nova Esperança , 13 casos
-              [-16.7166097, -43.8342024, 06], // Nova Morada , 06 casos
-              [-16.741871, -43.8349361, 06], // Novo Delfino , 06 casos
-              [-16.678782, -43.8248074, 03], // Novo Jaraguá , 03 casos
-              [-16.7528032, -43.8685811, 05], // Olga Benário , 05 casos
-              [-16.69795, -43.8409351, 17], // Planalto , 17 casos
-              [-16.7326881, -43.813067, 05], // Portal dos Ipês , 05 casos
-              [-16.7133486, -43.8731769, 04], // Prol. Todos os Santos , 04 casos
-              [-16.6984504, -43.8455359, 01], // Raul Lourenço , 01 caso
-              [-16.6692847, -43.8295355, 06], // Recanto das Aguas , 06 casos
-              [-16.6966023, -43.8548453, 14], // Renascença , 14 casos
-              [-16.6774537, -43.8368051, 03], // Residêncial MG , 03 casos
-              [-16.7755002, -43.8699679, 04], // Resindêncial Sul , 04 casos
-              [-16.6647225, -43.8504602, 04], // Residêncial Vitória I , 04 casos
-              [-16.6616608, -43.8508029, 02], // Residêncial Vitória II , 02 casos
-              [-16.7262237, -43.8578881, 08], // Roxo Verde , 08 casos
-              [-16.7403709, -43.8779314, 12], // Sagrada Família , 12 casos
-              [-16.6923314, -43.8761189, 09], // Santa Eugênia , 09 casos
-              [-16.7138741, -43.8358372, 03], // Santa Laura , 03 casos
-              [-16.7295734, -43.8409095, 08], // Santa Lúcia , 08 casos
-              [-16.7301073, -43.841457, 02], // Santa Lúcia II , 02 casos
-              [-16.7706351, -43.8508127, 11], // Santa Rafaela , 11 casos
-              [-16.7316553, -43.8604355, 28], // Santa Rita , 28 casos
-              [-16.7390104, -43.8555302, 09], // Santa Rita II , 09 casos
-              [-16.7741831, -43.8503492, 01], // Santo Amaro , 01 caso
-              [-16.7480443, -43.8432782, 05], // Santo Antônio I , 05 casos
-              [-16.7520478, -43.8459035, 12], // Santo Antônio II , 12 casos
-              [-16.7368955, -43.8726784, 05], // Santo Expedito , 05 casos
-              [-16.7629869, -43.851061, 08], // Santo Inácio , 08 casos
-              [-16.711917, -43.8101165, 02], // Santos Dumont , 02 casos
-              [-16.7017422, -43.8782973, 30], // Santos Reis , 30 casos
-              [-16.7259389, -43.8192196, 02], // São Bento , 02 casos
-              [-16.7564382, -43.8782449, 08], // São Geraldo , 08 casos
-              [-16.7930819, -43.8902907, 04], // São Geraldo II , 04 casos
-              [-16.7221159, -43.8616589, 24], // São José , 24 casos
-              [-16.7500571, -43.86304, 24], // São Judas , 24 casos
-              [-16.6899784, -43.8292928, 01], // São Lucas , 01 caso
-              [-16.701045, -43.849662, 02], // Tancredo Neves , 02 casos
-              [-16.7191957, -43.8744883, 18]// Todos os Santos , 18 casos
-              [-16.6981009, -43.8112506, 02], // Universitário , 02 casos
-              [-16.7500483, -43.8751682, 07], // Vargem Grande II , 07 casos
-              [-16.7327011, -43.8315784, 02], // Veneza Park , 02 casos
+      var heat = L.heatLayer([
+      
+      [-16.7239459, -43.8174572, 12], // Acácias, 12 casos
+      [-16.705497, -43.8442079, 4], // Alcides Rabelo, 4 casos
+      [-16.7022935, -43.854137, 8], // Alice Maia, 8 casos
+      [-16.7665189, -43.8514503, 11], // Alterosas, 11 casos
+      [-16.750408, -43.8401285, 11], // Alto da Boa Vista, 11 casos
+      [-16.6928142, -43.8500339, 1], // Alto Floresta, 1 casos
+      [-16.715107, -43.8548799, 17], // Alto São João, 17 casos
+      [-16.6981673, -43.8621516, 7], // Amazonas, 7 casos
+      [-16.7514792, -43.851431, 8], // Antonio Pimenta, 8 casos
+      [-16.7184117, -43.8056036, 12], // Augusta Mota, 12 casos
+      [-16.7121949, -43.8762826, 6], // Barcelona Park, 6 casos
+      [-16.7026821, -43.8767837, 2], // Bela Vista, 2 casos
+      [-16.697268, -43.8734884, 1], // Bela Paisagem, 1 casos
+      [-16.7295868, -43.8341256, 15], // Belvedere, 15 casos
+      [-16.7352223, -43.8783252, 11], // Candida Camara, 11 casos
+      [-16.7510679, -43.8723769, 11], // Canelas, 11 casos
+      [-16.7449677, -43.8666246, 5], // Canelas II, 5 casos
+      [-16.735269, -43.828513, 1], // Camilo Prates, 1 casos
+      [-16.7239557, -43.8300081, 19], // Carmelo, 19 casos
+      [-16.724568, -43.8674041, 31], // Centro, 31 casos
+      [-16.759773, -43.8765853, 1], // Chiquinho Guimaraes, 1 casos
+      [-16.668202, -43.8534452, 5], // Cidade Industrial, 5 casos
+      [-16.739058, -43.8684655, 4], // Cidade Nova, 5 casos
+      [-16.7302789, -43.8738369, 5], // Cidade Santa Maria, 5 casos
+      [-16.7320331, -43.8520499, 13], // Cintra, 13 casos
+      [-16.7544615, -43.8714182, 5], // Ciro dos anjos, 5 casos
+      [-16.7530521, -43.868753, 6], // Conj Joaquim Costa, 6 casos
+      [-16.739018, -43.8355906, 21], // Delfino Magalhaes, 21 casos
+      [-16.6850181, -43.8643642, 1], // Distrito Industrial, 1 casos
+      [-16.7065527, -43.8653421, 26], // Edgar Pereira, 26 casos
+      [-16.6868175, -43.8802598, 21], // Eldorado, 21 casos
+      [-16.7125301, -43.8385308, 13], // Esplanada, 13 casos
+      [-16.6927752, -43.8504629, 5], // Floresta, 5 casos
+      [-16.7424662, -43.8770143, 6], // Funcionarios, 6 casos
+      [-16.7087973, -43.8329448, 3], // Guarujá, 3 casos
+      [-16.7370525, -43.8995113, 34], // Ibituruna, 34 casos
+      [-16.7173196, -43.8155766, 30], // Independencia, 30 casos
+      [-16.7151331, -43.8306167, 4], // Interlagos, 4 casos
+      [-16.6849902, -43.8205335, 1], // Jaragua, 1 casos
+      [-16.7214243, -43.8141242, 3], // Jardim Alegre, 3 casos
+      [-16.7423535, -43.8502309, 2], // Jardim Alvorada, 2 casos
+      [-16.6973494, -43.8682499, 4], // Jardim Brasil, 4 casos
+      [-16.7540206, -43.8925754, 3], // Jardim Liberdade, 3 casos
+      [-16.7467595, -43.829147, 5], // Jardim Olimpico, 5 casos
+      [-16.7359541, -43.8448995, 20], // Jardim Palmeiras, 20 casos
+      [-16.7141245, -43.8807406, 3], // Jardim Panorama, 3 casos
+      [-16.717906, -43.834082, 16], // Jardim Primavera, 16 casos
+      [-16.7559178, -43.8765596, 6], // Jardim São Geraldo, 6 casos
+      [-16.7283761, -43.8808426, 6], // Jardim São Luiz, 6 casos
+      [-16.6946151, -43.844848, 3], // Jk, 3 casos
+      [-16.755399, -43.8447961, 4], // José Carlos de Lima, 4 casos
+      [-16.7256003, -43.8516507, 7], // Lourdes, 7 casos
+      [-16.7488882, -43.8808025, 56], // Major Prates, 56 casos
+      [-16.7606783, -43.865023, 35], // Maracanã, 35 casos
+      [-16.7534121, -43.8523353, 1], // Maria Candida, 1 casos
+      [-16.7235683, -43.8776138, 10], // Melo, 10 casos
+      [-16.7278922, -43.8491105, 2], // Monte Alegre, 2 casos
+      [-16.7211594, -43.8398456, 17], // Monte Carmelo, 17 casos
+      [-16.7601369, -43.8906444, 5], // Morada da Serra, 5 casos
+      [-16.7568273, -43.8850862, 5], // Morada do Parque, 5 casos
+      [-16.7448835, -43.8782833, 16], // Morada do Sol, 16 casos
+      [-16.7361685, -43.862541, 14], // Morrinhos, 14 casos
+      [-16.7383835, -43.8501003, 11], // Nossa Senhora de Fátima, 11 casos
+      [-16.7043941, -43.8689571, 6], // Nossa Senhora Aparecida, 6 casos
+      [-16.6724164, -43.8226778, 01], // Nova América , 01 caso
+      [-16.5818688, -43.9422432, 13], // Nova Esperança , 13 casos
+      [-16.7166097, -43.8342024, 06], // Nova Morada , 06 casos
+      [-16.741871, -43.8349361, 06], // Novo Delfino , 06 casos
+      [-16.678782, -43.8248074, 03], // Novo Jaraguá , 03 casos
+      [-16.7528032, -43.8685811, 05], // Olga Benário , 05 casos
+      [-16.69795, -43.8409351, 17], // Planalto , 17 casos
+      [-16.7326881, -43.813067, 05], // Portal dos Ipês , 05 casos
+      [-16.7133486, -43.8731769, 04], // Prol. Todos os Santos , 04 casos
+      [-16.6984504, -43.8455359, 01], // Raul Lourenço , 01 caso
+      [-16.6692847, -43.8295355, 06], // Recanto das Aguas , 06 casos
+      [-16.6966023, -43.8548453, 14], // Renascença , 14 casos
+      [-16.6774537, -43.8368051, 03], // Residêncial MG , 03 casos
+      [-16.7755002, -43.8699679, 04], // Resindêncial Sul , 04 casos
+      [-16.6647225, -43.8504602, 04], // Residêncial Vitória I , 04 casos
+      [-16.6616608, -43.8508029, 02], // Residêncial Vitória II , 02 casos
+      [-16.7262237, -43.8578881, 08], // Roxo Verde , 08 casos
+      [-16.7403709, -43.8779314, 12], // Sagrada Família , 12 casos
+      [-16.6923314, -43.8761189, 09], // Santa Eugênia , 09 casos
+      [-16.7138741, -43.8358372, 03], // Santa Laura , 03 casos
+      [-16.7295734, -43.8409095, 08], // Santa Lúcia , 08 casos
+      [-16.7301073, -43.841457, 02], // Santa Lúcia II , 02 casos
+      [-16.7706351, -43.8508127, 11], // Santa Rafaela , 11 casos
+      [-16.7316553, -43.8604355, 28], // Santa Rita , 28 casos
+      [-16.7390104, -43.8555302, 09], // Santa Rita II , 09 casos
+      [-16.7741831, -43.8503492, 01], // Santo Amaro , 01 caso
+      [-16.7480443, -43.8432782, 05], // Santo Antônio I , 05 casos
+      [-16.7520478, -43.8459035, 12], // Santo Antônio II , 12 casos
+      [-16.7368955, -43.8726784, 05], // Santo Expedito , 05 casos
+      [-16.7629869, -43.851061, 08], // Santo Inácio , 08 casos
+      [-16.711917, -43.8101165, 02], // Santos Dumont , 02 casos
+      [-16.7017422, -43.8782973, 30], // Santos Reis , 30 casos
+      [-16.7259389, -43.8192196, 02], // São Bento , 02 casos
+      [-16.7564382, -43.8782449, 08], // São Geraldo , 08 casos
+      [-16.7930819, -43.8902907, 04], // São Geraldo II , 04 casos
+      [-16.7221159, -43.8616589, 24], // São José , 24 casos
+      [-16.7500571, -43.86304, 24], // São Judas , 24 casos
+      [-16.6899784, -43.8292928, 01], // São Lucas , 01 caso
+      [-16.701045, -43.849662, 02], // Tancredo Neves , 02 casos
+      [-16.7191957, -43.8744883, 18], // Todos os Santos , 18 casos
+      [-16.6981009, -43.8112506, 02], // Universitário , 02 casos
+      [-16.7500483, -43.8751682, 07], // Vargem Grande II , 07 casos
+      [-16.7327011, -43.8315784, 02], // Veneza Park , 02 casos
               [-16.7142029, -43.8475191, 07], // Vera Cruz , 07 casos
               [-16.7020349, -43.854646, 01], // Vl. Alice , 01 caso
               [-16.742269, -43.8278973, 07], // Vl. Anália , 07 casos
@@ -315,8 +315,7 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
               [-16.6854788, -43.8331834, 08], // Vilage do Lago , 08 casos
               [-16.6746695, -43.8289361, 11], // Vilage de Lago II , 11 cosos 
               [-16.820279, -43.934274, 01], // Área Rural Sta. Bárbara , 01 caso
-	 
-	 ],{
+      ],{
 	 
 	 max : 2.0,
         radius : 50, // default value
