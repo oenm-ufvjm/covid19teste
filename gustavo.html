@@ -15,6 +15,7 @@
     #map{width: 620px; height: 400px;}
     #mapa2{width: 620px; height: 400px;}
     #mapa3{width: 620px; height: 400px;}
+    #mapa4{width: 620px; height: 400px;}
     </style> 
   
 </head>
@@ -324,6 +325,36 @@ var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     } ).addTo(mymap3);
 
         </script>
+	
+	
+	
+<h1>Mapa do Norte de Minas</h1>
+ 
+ <div id="mapa4"></div>
+      
+      <p> Mapa de calor do Norte de Minas</p>
+      
+      
+       <script>      
+     
+      var mymap4 = L.map('mapa4').setView([-16.6049385, ,-43.7998836], 8.20);
+
+var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(mymap4);
+        
+        
+        var heat = L.heatLayer([
+		
+		
+		
+		],{
+        max : 3.0,
+        radius : 60, // default value
+        blur : 25, // default value
+        gradient : {0.2:'blue',0.5: 'lime', 0.7: 'yellow', 0.9: 'red'} // Values can be set for a scale of 0-1
+    } ).addTo(mymap4);
+		
 		     
 
                
