@@ -1,41 +1,19 @@
 <html>
 <head>
 <title>Esta é nossa Página de Teste!!!</title>
-  <style>
-    .btn1{
-      font-family: arial;
-      font-size: 18px;
-      text-transform: uppercase;
-      font-weight:700;
-      border:none;
-      border-radius:15px;
-      padding:13px;
-      cursor: pointer;
-    }
-    .btn-green{
-      background:#a3d869;
-      color:#fff;
-      box-shadow:0 3px 0 #5b8d25;
-    }
-    .btn-green:hover{
-      background:#5b8d25;
-      color:#fff;
-      box-shadow:0 3px 0 #324e14;
-    }
-    .btn-green:active{
-      position:relative;
-      top:3px;
-      box-shadow:none;
-    }
-    .btn2 {
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
+</head>
+<!doctype html>
+<html>
+<style>
+
+
+.button {
    color: #FFFFFF;
    font-family: Open Sans;
-   font-size: 14px;
+   font-size: 20px;
    font-weight: 500;
-   padding: 8px;
+   padding: 10px;
+   width: 150px;
    background-color: #3D94F6;
    border: solid #337FED 1px;
    text-decoration: none;
@@ -44,7 +22,7 @@
    text-align: center;
 }
 
-.btn2:hover {
+.button:hover {
    border: solid #337FED 1px;
    background: #1E62D0;
    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
@@ -52,29 +30,111 @@
    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
    text-decoration: none;
 }
-  </style>
-</head>
+.dropdown button{
+  display:block;
+}
+
+.dropdown div div button{
+  margin-left:152px;
+}
+.dropdown div div div a{
+  margin-left:304px;
+}
+#drop-content a{
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 10px;
+   width: 150px;
+   background-color: #3D94F6;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: block;
+   cursor: pointer;
+   text-align: center;
+}
+#drop-content a:hover{
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   text-decoration: none;
+}
+
+</style>
 <body>
+ <div class="dropdown">
+  <button onclick="show_hide()"class="button">Mesorregiões</button>
+  <div style="display:none; "id="drop-content">
+   <button onclick="show_hide1()"class="button">Jequitinhonha</button>
+    <div style="display:none; "id="drop-content1">
+      <button onclick="show_hide5()"class="button">Microrregião Almenara</button>
+        <div style="display:none; "id="drop-content5">
+          <a href="#">CIDADE1</a>  
+          <a href="#">CIDADE2</a> 
+          <a href="#">CIDADE3</a> 
+        </div>
+      <button onclick="show_hide1()"class="button">Microrregião Araçuai</button>
+    </div>
+   <button onclick="show_hide2()"class="button">Noroeste de Minas</button>
+    <div style="display:none; "id="drop-content2">
+      <button onclick="show_hide2()"class="button">Microrregião Paracatu</button>
+      <button onclick="show_hide2()"class="button">Microrregião Unaí</button>
+    </div>
 
-<h1>Página de Teste do Alisson! </h1>
-
-  <div class="dropdown">
-  <button class="btn1 btn-green" type="button">
-    Cidades
-  </button>
-  <div class="dropdown-content">
-  <br>
-  <a href="#" class="btn2">Janaúba</a>
-  <a href="montesclaros.html" class="btn2">Montes Claros</a>
-  <a href="#" class="btn2">Teófilo Otoni</a>
-  <a href="#" class="btn2">Unaí</a>
+   <button onclick="show_hide3()"class="button">Norte de Minas</button>
+   <button onclick="show_hide4()"class="button">Vale do Mucuri</button>
   </div>
-</div>
+ 
+   
+ </div>
+<script>
+function show_hide(){
+  var click = document.getElementById("drop-content");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide1(){
+  var click = document.getElementById("drop-content1");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide2(){
+  var click = document.getElementById("drop-content2");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide5(){
+  var click = document.getElementById("drop-content5");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
   
 						  
 						  
