@@ -1,38 +1,15 @@
+<!doctype html>
+<html>
 <style>
-    .btn1{
-      font-family: arial;
-      font-size: 18px;
-      text-transform: uppercase;
-      font-weight:700;
-      border:none;
-      border-radius:15px;
-      padding:13px;
-      cursor: pointer;
-    }
-    .btn-green{
-      background:#a3d869;
-      color:#fff;
-      box-shadow:0 3px 0 #5b8d25;
-    }
-    .btn-green:hover{
-      background:#5b8d25;
-      color:#fff;
-      box-shadow:0 3px 0 #324e14;
-    }
-    .btn-green:active{
-      position:relative;
-      top:3px;
-      box-shadow:none;
-    }
-    .btn2 {
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
+
+
+.button {
    color: #FFFFFF;
    font-family: Open Sans;
-   font-size: 14px;
+   font-size: 20px;
    font-weight: 500;
-   padding: 8px;
+   padding: 10px;
+   width: 150px;
    background-color: #3D94F6;
    border: solid #337FED 1px;
    text-decoration: none;
@@ -41,7 +18,7 @@
    text-align: center;
 }
 
-.btn2:hover {
+.button:hover {
    border: solid #337FED 1px;
    background: #1E62D0;
    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
@@ -49,30 +26,295 @@
    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
    text-decoration: none;
 }
-  </style>
-</head>
+.dropdown button{
+  display:block;
+}
+
+.dropdown div div button{
+  margin-left:152px;
+}
+.dropdown div div div a{
+  margin-left:304px;
+}
+#drop-content a{
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 10px;
+   width: 150px;
+   background-color: #3D94F6;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: block;
+   cursor: pointer;
+   text-align: center;
+}
+#drop-content a:hover{
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   text-decoration: none;
+}
+
+</style>
 <body>
+ <div class="dropdown">
+  <button onclick="show_hide()"class="button">Mesorregiões</button>
+  <div style="display:none; "id="drop-content">
+   <button onclick="show_hide1()"class="button">Jequitinhonha</button>
+    <div style="display:none; "id="drop-content1">
+      <button onclick="show_hide5()"class="button">Microrregião Almenara</button>
+        <div style="display:none; "id="drop-content5">
+          <a href="#">Almenara</a>  
+          <a href="#">Bandeira</a> 
+          <a href="#">Divisópolis</a> 
+          <a href="#">Felisburgo</a> 
+          <a href="#">Jacinto</a> 
+          <a href="#">Jequitinhonha</a> 
+          <a href="#">Joaíma</a> 
+          <a href="#">Jordânia</a> 
+          <a href="#">Mata Verde</a> 
+          <a href="#">Monte Formoso</a> 
+          <a href="#">Palmópolis</a> 
+          <a href="#">Rio do Prado</a> 
+          <a href="#">Rubim</a> 
+          <a href="#">Salto da Divisa</a> 
+          <a href="#">Santa Maria do Salto</a> 
+          <a href="#">Santo Antônio do Jacinto</a> 
+        </div>
+      <button onclick="show_hide6()"class="button">Microrregião Araçuai</button>
+        <div style="display:none; "id="drop-content6">
+          <a href="#">Araçuai</a>
+          <a href="#">Caraí</a>
+          <a href="#">Coronel Murta</a>
+          <a href="#">Itinga</a>
+          <a href="#">Novo Cruzeiro</a>
+          <a href="#">Padre Paraiso	</a>
+          <a href="#">Ponto dos Volantes</a> 
+          <a href="#">Virgem da Lapa</a>
+        </div>
+      <button onclick="show_hide7()"class="button">Microrregião Capelinha</button>
+        <div style="display:none; "id="drop-content7">
+          <a href="#">Angelândia</a>
+          <a href="#">Aricanduva</a>
+          <a href="#">Berilo</a>
+          <a href="#">Capelinha</a>
+          <a href="#">Carbonita</a>
+          <a href="#">Chapada do Norte</a>
+          <a href="#">Francisco Badaraó</a>
+          <a href="#">Itamarandiba</a>  
+          <a href="#">Jenipapo de Minas</a> 
+          <a href="#">José Gonçalves de Minas</a> 
+          <a href="#">Leme do Prado</a> 
+          <a href="#">Minas Novas</a>
+          <a href="#">Turmalina</a>
+          <a href="#">Veredinha</a> 
+        </div>
+      <button onclick="show_hide8()"class="button">Microrregião Diamantina</button>
+        <div style="display:none; "id="drop-content8">
+          <a href="#">Couto de Magalhães de Minas</a> 
+          <a href="#">Datas</a> 
+          <a href="#">Diamantina</a> 
+          <a href="#">Felício dos Santos</a> 
+          <a href="#">Gouveia</a> 
+          <a href="#">Presidente Kubitschek</a> 
+          <a href="#">São Gonçalo do Rio Preto</a> 
+          <a href="#">Senador Modestino Gonçalves</a>   
+        </div>
+      <button onclick="show_hide9()"class="button">Microrregião Pedra Azul</button>
+        <div style="display:none; "id="drop-content9">
+          <a href="#">Cachoeira de Pajeú</a>
+          <a href="#">Comercinho</a>
+          <a href="#">Itaobim</a>
+          <a href="#">Medina</a>
+          <a href="#">Pedra Azul</a>  
+        </div>
+    </div>
+   <button onclick="show_hide2()"class="button">Noroeste de Minas</button>
+    <div style="display:none; "id="drop-content2">
+      <button onclick="show_hide10()"class="button">Microrregião Paracatu</button>
+        <div style="display:none; "id="drop-content10">
+          <a href="#">Arinos</a>
+          <a href="#">Bonfinópolis de Minas</a> 
+          <a href="#">Buritis</a> 
+          <a href="#">Cabeceira Grande</a> 
+          <a href="#">Dom Bosco</a> 
+          <a href="#">Formoso</a> 
+          <a href="#">Natalândia</a> 
+          <a href="#">Unaí</a> 
+          <a href="#">Uruana de Minas</a>   
+        </div>
+      <button onclick="show_hide11()"class="button">Microrregião Unaí</button>
+        <div style="display:none; "id="drop-content11">
+          <a href="#">Brasilândia de Minas</a>  
+          <a href="#">Guarda-Mor</a>
+          <a href="#">João Pinheiro</a>
+          <a href="#">Lagamar</a>
+          <a href="#">Lagoa Grande</a>
+          <a href="#">Paracatu</a>
+          <a href="#">Presidente Olegário</a>
+          <a href="#">São Gonçalo do Abaeté</a>
+          <a href="#">Varjão de Minas</a>
+          <a href="#">Vazante</a>
+        </div>
+    </div>
 
-<h1>Página de Teste do Alisson! </h1>
-
-  <div class="dropdown">
-  <button class="btn1 btn-green" type="button">
-    Cidades
-  </button>
-  <div class="dropdown-content">
-  <br>
-  <a href="#" class="btn2">Janaúba</a>
-  <a href="#" class="btn2">Montes Claros</a>
-  <a href="#" class="btn2">Teófilo Otoni</a>
-  <a href="#" class="btn2">Unaí</a>
+   <button onclick="show_hide3()"class="button">Norte de Minas</button>
+    <div style="display:none; "id="drop-content3">
+      <button onclick="show_hide12()"class="button">Microrregião Bocaiúva</button>
+        <div style="display:none; "id="drop-content12">
+          <a href="#">Bocaiúva</a>  
+          <a href="#">Engenheiro Navarro</a> 
+          <a href="#">Francisco Dumont</a> 
+          <a href="#">Guaraciama</a> 
+          <a href="#">Olhos-d'Água</a> 
+        </div>
+      <button onclick="show_hide13()"class="button">Microrregião Grão-Mogol</button>
+        <div style="display:none; "id="drop-content13">
+          <a href="#">Botumirim</a>  
+          <a href="#">Cristália</a> 
+          <a href="#">Grão-Mogol</a> 
+          <a href="#">Itacambira</a> 
+          <a href="#">Josenópolis</a> 
+          <a href="#">Padre Carvalho</a> 
+        </div>
+      <button onclick="show_hide14()"class="button">Microrregião Janaúba</button>
+        <div style="display:none; "id="drop-content14">
+          <a href="#">Catuti</a>
+          <a href="#">Espinosa</a>
+          <a href="#">Gameleiras</a>
+          <a href="#">Jaíba</a>
+          <a href="#">Janaúba</a>
+          <a href="#">Mamonas</a>
+          <a href="#">Mato Verde</a>
+          <a href="#">Monte Azul</a>
+          <a href="#">Nova Porteirinha</a>
+          <a href="#">Pai Pedro</a>
+          <a href="#">Porteirinha</a>
+          <a href="#">Riacho dos Machados</a>  
+          <a href="#">Serranópolis de Minas</a> 
+        </div>
+      <button onclick="show_hide15()"class="button">Microrregião Januária</button>
+        <div style="display:none; "id="drop-content15">
+          <a href="#">Vazante</a>  
+          <a href="#">Bonito de Minas</a>
+          <a href="#">Chapada Gaúcha</a>
+          <a href="#">Cônego Marinho</a>
+          <a href="#">Icaraí de Minas</a>
+          <a href="#">Itacarambi</a>
+          <a href="#">Januária</a>
+          <a href="#">Juvenília</a>
+          <a href="#">Manga</a>
+          <a href="#">Matias Cardoso</a>
+          <a href="#">Miravânia</a>
+          <a href="#">Montalvânia</a>
+          <a href="#">Pedras de Maria da Cruz</a>
+          <a href="#">Pintópolis</a>
+          <a href="#">São Francisco</a>
+          <a href="#">São João das Missões</a>
+          <a href="#">Urucuia</a>
+        </div>
+      <button onclick="show_hide16()"class="button">Microrregião Montes Claros</button>
+        <div style="display:none; "id="drop-content16">
+          <a href="#">Brasília de Minas</a>  
+          <a href="#">Campo Azul</a>  
+          <a href="#">Capitão Enéias</a>  
+          <a href="#">Claro dos Poções</a>  
+          <a href="#">Coração de Jesus</a>  
+          <a href="#">Francisco Sá</a>  
+          <a href="#">Glaucilândia</a>  
+          <a href="#">Ibiracatu</a>  
+          <a href="#">Japonvar</a>  
+          <a href="#">Juramento</a>  
+          <a href="#">Lontra</a>  
+          <a href="#">Luislândia</a>  
+          <a href="#">Mirabela</a>  
+          <a href="montesclaros.html">Montes Claros</a>  
+          <a href="#">Patis</a>
+          <a href="#">Ponto Chique</a>
+          <a href="#">São João da Lagoa</a>
+          <a href="#">São João da Ponte</a>
+          <a href="#">São João do Pacuí</a>
+          <a href="#">Ubaí</a> 
+          <a href="#">Varzelândia</a>
+          <a href="#">Verdelândia</a> 
+        </div>
+      <button onclick="show_hide17()"class="button">Microrregião Pirapora</button>
+        <div style="display:none; "id="drop-content17">
+          <a href="#">Buritizeiro</a>  
+          <a href="#">Ibiaí</a> 
+          <a href="#">Jequitaí</a> 
+          <a href="#">Lagoa dos Patos</a> 
+          <a href="#">Lassance</a> 
+          <a href="#">Pirapora</a> 
+          <a href="#">Riachinho</a> 
+          <a href="#">Santa Fé de Minas</a> 
+          <a href="#">São Romão</a> 
+          <a href="#">Várzea da Palma</a> 
+        </div>
+      <button onclick="show_hide18()"class="button">Microrregião Salinas</button>
+        <div style="display:none; "id="drop-content18">
+          <a href="#">Águas Vermelhas</a> 
+          <a href="#">Berizal</a> 
+          <a href="#">Curral de Dentro</a> 
+          <a href="#">Divisa Alegre</a> 
+          <a href="#">Fruta de Leite</a> 
+          <a href="#">Indaiabira</a> 
+          <a href="#">Montezuma</a> 
+          <a href="#">Ninheira</a> 
+          <a href="#">Novorizonte</a> 
+          <a href="#">Rio Pardo de Minas</a> 
+          <a href="#">Rubelita</a> 
+          <a href="#">Salinas</a> 
+          <a href="#">Santa Cruz de Salinas</a> 
+          <a href="#">Santo Antônio do Retiro</a> 
+          <a href="#">São João do Paraíso</a> 
+          <a href="#">Taiobeiras</a> 
+          <a href="#">Vargem Grande do Rio Pardo</a> 
+        </div>
+      
+    </div>
+   <button onclick="show_hide4()"class="button">Vale do Mucuri</button>
+    <div style="display:none; "id="drop-content4">
+      <button onclick="show_hide19()"class="button">Microrregião Nanuque</button>
+        <div style="display:none; "id="drop-content19">
+          <a href="#">Águas Formosas</a>
+          <a href="#">Bertópolis</a>
+          <a href="#">Carlos Chagas</a>
+          <a href="#">Crisólita</a>
+          <a href="#">Fronteira dos Vales</a>
+          <a href="#">Maxacalis</a>
+          <a href="#">Nanuque</a>
+          <a href="#">Santa Helena de Minas</a>
+          <a href="#">Serra dos Aimorés</a>
+          <a href="#">Umburatiba</a>  
+        </div>
+      <button onclick="show_hide20()"class="button">Microrregião Teófilo Otoni</button>
+        <div style="display:none; "id="drop-content20">
+          <a href="#">Ataléia</a>  
+          <a href="#">Catuji</a>
+          <a href="#">Franciscópolis</a>
+          <a href="#">Frei Gaspar</a>
+          <a href="#">Itaipé</a>
+          <a href="#">Ladainha</a>
+          <a href="#">Malacacheta</a>
+          <a href="#">Novo Oriente de Minas</a>
+          <a href="#">Ouro Verde de Minas</a>
+          <a href="#">Pavão</a>
+          <a href="#">Poté</a>
+          <a href="#">Setubinha</a>
+          <a href="#">Teófilo Otoni</a>
+        </div>
+    </div>
   </div>
-</div>
-  
+ </div>
 <style> 
 .newspaper {
   column-count: 2;
@@ -87,3 +329,198 @@
 <img src="obitos_totais_montes claros.png" alt="Óbitos Totais Montes Claros" width="675" height="500">
 <img src="obitos_novos_montes claros.png" alt="Óbitos Novos Montes Claros" width="675" height="500">
 </div>
+    
+<script>
+function show_hide(){
+  var click = document.getElementById("drop-content");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide1(){
+  var click = document.getElementById("drop-content1");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide2(){
+  var click = document.getElementById("drop-content2");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide3(){
+  var click = document.getElementById("drop-content3");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide4(){
+  var click = document.getElementById("drop-content4");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide5(){
+  var click = document.getElementById("drop-content5");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide6(){
+  var click = document.getElementById("drop-content6");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide7(){
+  var click = document.getElementById("drop-content7");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide8(){
+  var click = document.getElementById("drop-content8");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide9(){
+  var click = document.getElementById("drop-content9");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide10(){
+  var click = document.getElementById("drop-content10");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide11(){
+  var click = document.getElementById("drop-content11");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide12(){
+  var click = document.getElementById("drop-content12");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide13(){
+  var click = document.getElementById("drop-content13");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide14(){
+  var click = document.getElementById("drop-content14");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide15(){
+  var click = document.getElementById("drop-content15");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide16(){
+  var click = document.getElementById("drop-content16");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide17(){
+  var click = document.getElementById("drop-content17");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide18(){
+  var click = document.getElementById("drop-content18");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide19(){
+  var click = document.getElementById("drop-content19");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+function show_hide20(){
+  var click = document.getElementById("drop-content20");
+  if(click.style.display ==="none"){
+    click.style.display = "block" ;
+  }
+  else{
+    click.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
